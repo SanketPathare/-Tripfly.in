@@ -7,7 +7,7 @@ import Service from "./routes/Service";
 import Contact from "./routes/Contact";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 
@@ -17,13 +17,14 @@ export default function App() {
    <Navbar/>
      <div className="App">
       <Routes>
-       <Route path="/home" element={<Home/>}/>
+       <Route path="/" element={<Home/>}/>
        <Route path="/about" element={<About/>}/>
        <Route path="/service" element={  <Service/>}/>
        <Route path="/contact" element={  <Contact/>}/>
       </Routes>
   
        <Footer/>
+       <SpeedInsights/>
        </div>
      
      </>
