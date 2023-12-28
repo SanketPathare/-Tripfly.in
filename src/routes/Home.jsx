@@ -2,6 +2,7 @@ import Destination from "../components/Destination.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Trip from "../components/Trip.jsx";
 import Hero from "../components/hero.jsx";
+import  heroImg from "../assets/images/img1.jpg";
 
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
       <Navbar />
       <Hero
         cName="hero"
-        heroImg="https://wallpapercave.com/wp/8wHHL7j.jpg"
+        heroImg= {heroImg}
         title="Your journey Your Story"
         text="Choose Your Favorite Destination."
         buttonText="Travel Plan"
